@@ -43,5 +43,9 @@ raylib/
 .DS_Store
 Thumbs.db
 
-./.useless
-.useless/
+/build/
+/useless/
+/bitra
+*.o
+*.log
+*.swp
