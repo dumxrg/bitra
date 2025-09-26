@@ -1,0 +1,51 @@
+# === Compilados y binarios ===
+*.out
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+bitra
+
+# === Directorios comunes de salida ===
+/build/
+/bin/
+/dist/
+
+# === Archivos temporales del sistema ===
+*.log
+*.tmp
+*.swp
+
+# === Archivos de respaldo ===
+*~
+*.bak
+
+# === Archivos del editor (VSCode, etc.) ===
+.vscode/
+*.code-workspace
+
+# === Archivos de CMake (si usas) ===
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# === Archivos generados por el compilador ===
+*.a
+*.lib
+
+# === Archivos de Raylib generados ===
+raylib/
+
+# === Archivos del sistema operativo ===
+.DS_Store
+Thumbs.db
+
+/build/
+/useless/
+/bitra
+*.o
+*.log
+*.swp

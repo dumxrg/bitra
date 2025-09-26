@@ -22,24 +22,15 @@ include_directories(include)
 # Busca todos los archivos fuente en src/
 file(GLOB SOURCES "src/*.cpp")
 
-# --- CONFIGURACIÓN DE RAYLIB LOCAL ---
-# Desactiva instalación global y ejemplos
-set(BUILD_SHARED_LIBS OFF CACHE BOOL "" FORCE)
-set(BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
-
-# Añade raylib como subdirectorio (clonada en ./external/raylib o similar)
-add_subdirectory(external/raylib)
-
-# Añade el ejecutable
+# Crea el ejecutable
 add_executable(bitra ${SOURCES})
 
-# Enlaza con raylib (compilada localmente)
-target_link_libraries(bitra PRIVATE raylib)
+# Librerías necesarias
+# Si usas raylib instalada en el sistema
+find_package(raylib REQUIRED)
 
-# Enlaza con librerías del sistema necesarias en Linux
-if(UNIX)
-    target_link_libraries(bitra PRIVATE m pthread dl rt X11 GL)
-endif()
+# Enlaza raylib y otras dependencias de sistema
+target_link_libraries(bitra PRIVATE raylib m pthread dl rt X11)
 
 # Instala los assets en el mismo directorio del binario
 file(COPY assets DESTINATION ${CMAKE_BINARY_DIR})
