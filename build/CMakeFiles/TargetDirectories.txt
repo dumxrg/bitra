@@ -1,3 +1,0 @@
-/home/dumxrg/bitra/build/CMakeFiles/bitra.dir
-/home/dumxrg/bitra/build/CMakeFiles/edit_cache.dir
-/home/dumxrg/bitra/build/CMakeFiles/rebuild_cache.dir

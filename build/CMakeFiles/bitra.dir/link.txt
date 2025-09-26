@@ -1,1 +1,0 @@
-/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/bitra.dir/link.d CMakeFiles/bitra.dir/src/gameState.cpp.o CMakeFiles/bitra.dir/src/inputHandler.cpp.o CMakeFiles/bitra.dir/src/main.cpp.o CMakeFiles/bitra.dir/src/menu.cpp.o CMakeFiles/bitra.dir/src/player.cpp.o -o bitra  /usr/lib/libraylib.so -lm -lpthread -ldl -lrt -lX11 -L/usr/lib -lraylib
