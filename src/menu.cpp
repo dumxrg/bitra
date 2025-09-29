@@ -9,9 +9,12 @@ void Menu::Update() {
 }
 
 void Menu::Draw() {
-  DrawText(title, window::WINDOW_WIDTH / 2 - MeasureText(title, titleFontSize) / 2,
-           window::WINDOW_HEIGHT / 2 - titleFontSize / 2, titleFontSize, YELLOW);
-  DrawText(subTitle,
-           window::WINDOW_WIDTH / 2 - MeasureText(subTitle, subTitleFontSize) / 2,
-           (float)window::WINDOW_HEIGHT / 1.25f, subTitleFontSize, YELLOW);
+ DrawText(title, (window::WORLD_WIDTH - MeasureText(title, titleFontSize)) / 2,
+         (window::WORLD_HEIGHT - titleFontSize) / 2, titleFontSize, YELLOW);
+
+DrawText(subTitle,
+         (window::WORLD_WIDTH - MeasureText(subTitle, subTitleFontSize)) / 2,
+         window::WORLD_HEIGHT * 0.8f,
+         subTitleFontSize, YELLOW);
+
 }

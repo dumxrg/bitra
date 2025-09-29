@@ -7,7 +7,7 @@
 *.so
 *.dylib
 bitra
-
+/assets/snappy
 # === Directorios comunes de salida ===
 /build/
 /bin/
